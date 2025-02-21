@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShowMeShoe</title>
+    <link rel = "stylesheet" href="all.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kollektif:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+</head>
+<body>
+    <!-- Background Texture -->
+    <div class="background-texture">
+        <img src="images/bg.jpg" alt="Background Texture"> 
+    </div>
+
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">
+           <a href="home.html"> <img src="images/Logo1.png" alt="Logo"></a> 
+        </div>
+        <ul>
+            <li><a href="home.html" class="home">Home</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">For</a>
+                <div class="dropdown-content">
+                    <a href="men.html" class="dropdown-item">Men</a>
+                    <a href="women.html" class="dropdown-item">Women</a>
+                    <a href="kids.html" class="dropdown-item">Kids</a>
+                </div>
+            </li>
+            <li><a href="personalize.html">Personalize</a></li>
+            <li><a href="sales.html">Sales</a></li>
+            <li><a href="trending.html">Trendings</a></li>
+        </ul>
+        <div class="icons">
+            <input type="text" class="search-bar" placeholder="Search">
+            <i class="fas fa-shopping-cart"></i>
+            <i class="fas fa-user"></i>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        
+        <div class="nepali-text">
+            <div data-aos="fade-right"
+            data-aos-offset="150"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="1000">
+            <p>खुट्टा भए <br>जुत्ता कत्ति कत्ति</p>
+        </div>
+    </div>
+        <div class="hero-image">
+            
+            <div data-scroll-container>
+                <div class="shoe-image" 
+                     data-scroll 
+                     data-scroll-class="in-view" 
+                     data-scroll-speed="2" 
+                     data-scroll-repeat>
+                  <img src="images/Hero1.png" alt="Shoe" class="floating-shoe">
+                </div>
+              </div>
+        </div>
+        <div class="hero-text">
+            <p>Get the shoe of your dreams at the best price and from authorized sellers.</p>
+            <a href="brands.html" class="explore-btn">Explore Brands</a>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+</body>
+</html>
+
+<script>const scroll = new LocomotiveScroll({
+    el: document.querySelector('[data-scroll-container]'),
+    smooth: true,
+    multiplier: 1.2,
+    lerp: 0.1,
+  });
+  
+</script>
+
+<style>
+    /* Floating Animation */
+    @keyframes float {
+        0% { transform: translateY(0px); }
+        50% { transform: translateY(-20px); }
+        100% { transform: translateY(0px); }
+    }
+
+    .floating-shoe {
+        animation: float 3s ease-in-out infinite;
+    }
+
+
+
