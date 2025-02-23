@@ -324,12 +324,12 @@ nav .icons i {
 }
 
 .whole {
-  
- 
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  min-height: 100vh;     
+  min-height: 100vh;  
+  padding-top: 0px;
 }
 
 .container {
@@ -411,12 +411,14 @@ nav .icons i {
 .colors {
   display: flex;
   gap: 10px;
+  border-color: #fff;
 }
 
 .colors span {
   width: 20px;
   height: 20px;
   border-radius: 50%;
+  
   display: inline-block;
   cursor: pointer;
   border: 2px solid transparent;
@@ -425,10 +427,13 @@ nav .icons i {
 
 .colors span:hover {
   border-color: #000;
+  border: 1px solid #ccc;
 }
 
 .colors .black {
   background-color: #000;
+  border: 1px solid #ccc;
+  
 }
 
 .colors .white {
