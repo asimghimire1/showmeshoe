@@ -159,7 +159,7 @@ nav ul li a {
 nav ul li a:hover,
 nav ul li a.active {
   text-decoration: none;
-  border-bottom: 2px solid #F30D0D;
+  border-bottom: 2px solid #f40b0b;
 }
 
 /* Dropdown */
@@ -367,16 +367,19 @@ nav .icons i {
   display: inline-block;
   padding: 10px 20px;
   background-color: #ffffff;
-  color: #000000;
+   color: #f40b0b;
   text-transform: uppercase;
   font-weight: bold;
-  border: none;
+  border-radius: 10px;
   cursor: pointer;
+  border: none;
   transition: background-color 0.3s ease;
 }
 
 .add-to-cart:hover {
-  background-color: #333;
+  background-color: #f40b0b;
+  color: #ffffff;
+  
 }
 
 .image-container {
