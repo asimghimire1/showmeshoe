@@ -265,11 +265,12 @@ nav .icons i {
 }
 
 .hero-image img {
+  margin-top: 50px;
   margin-right: 1000px;
   padding-right: 100px;
   max-width: 100%;
   height: auto;
-  object-fit: contain; /* Ensures the image is fully visible */
+  object-fit: contain; 
 }
 
 .nepali-text {
@@ -328,8 +329,9 @@ nav .icons i {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  min-height: 100vh;  
-  padding-top: 0px;
+  min-height: calc(100vh - 60px); 
+  padding: 20px; 
+  width: 100%; 
 }
 
 .container {
